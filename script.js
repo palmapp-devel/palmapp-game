@@ -33,7 +33,7 @@ function showScene() {
         const scene = scenes[currentScene];
         gameScreen.innerHTML = `
             <h2>${scene.name.replace('_', ' ')}</h2>
-            <img src="images/${scene.image}" alt="${scene.name}" class="scene-image">
+            <img src="Images/${scene.image}" alt="${scene.name}" class="scene-image">
             <p>Utratit: ${scene.spend} Kč</p>
             <button onclick="pay(${scene.spend})" class="button">Zaplatit PalmApp kartou</button>
         `;
